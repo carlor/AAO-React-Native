@@ -153,7 +153,7 @@ script:
       curl "https://raw.githubusercontent.com/andreafabrizi/Dropbox-Uploader/master/dropbox_uploader.sh" > dropbox_uploader.sh
       echo "OAUTH_ACCESS_TOKEN=$DROPBOX_OAUTH_TOKEN" > ./.dropbox_uploader
       chmod u+x ./dropbox_uploader.sh
-      ./dropbox_uploader.sh -f ./.dropbox_uploader "./android" "aao/android"
+      ./dropbox_uploader.sh -f ./.dropbox_uploader upload "./android" "aao/android"
     fi
 
 # ping slack with status
